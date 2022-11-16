@@ -63,7 +63,6 @@ def sendEmail(to, content):
 if __name__ == "__main__":
     wishMe()
     while True:
-    # if 1:
         query = takeCommand().lower()
 
         # Logic for executing tasks based on query
@@ -97,10 +96,9 @@ if __name__ == "__main__":
 
         elif 'open code' in query:
             codePath = "C:\\Users\\ASUS\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
-            # "C:\Users\ASUS\AppData\Local\Programs\Microsoft VS Code\Code.exe"
             os.startfile(codePath)
 
-        elif 'email to kunaal' in query:
+        elif 'email to abc' in query:
             try:
                 speak("What should I say?")
                 content = takeCommand()
